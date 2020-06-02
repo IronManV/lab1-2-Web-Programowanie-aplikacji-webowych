@@ -1,0 +1,140 @@
+@import "const";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 60px;
+    background-color: $header-dark;
+    display: flex;
+    align-items: center;
+
+    div{
+        color: $header-orange;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: bolder;
+        margin-left: 30px;
+        font: $font-stack;
+        font-size: 20px;
+    }
+}
+
+.kanban{
+    background-image: url("../img/vector-colorful-bright-abstract-geometric-background-for-business.jpg");
+    background-size: cover;
+    height: calc(100vh - 60px); 
+    display: flex;
+    flex-grow: 1;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#addBtn{
+    width: 40px;
+    height: 40px;
+    background-color: $header-orange;
+    border: none;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    box-shadow: 0 10px 10px -3px rgba(0, 0, 0 , 0.05),
+    0 3px 14px 2px rgba(0, 0, 0 , 0.05);
+    cursor:pointer;
+
+    #addBtn:active{
+        background-color: $btn-color-orange;
+    }
+}
+
+.addForm{
+    border-radius: 5px;
+    padding: 30px 25px;
+    background-color: $bg-color;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); /* for IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* for Safari */
+  font: $font-stack;
+  font-weight: bold;
+}
+.hidden{
+    display: none;
+}
+.blur{
+    filter: blur(5px);
+}
+.close{
+    padding: 0px;
+}
+.board{
+    display: flex;
+    min-height: 70vh;
+    min-width: 300px;
+    background: rgba(188, 143, 143, 0.6);
+    border-radius: 5px;
+    flex-direction: column;
+}
+.boardHeader{
+    margin: 15px 20px;
+    text-transform: uppercase;
+    font: $font-stack;
+    font-weight: bold;
+}
+.task{
+    background-color: $task-bg-color;
+    margin: 5px 20px 0px 20px;
+    padding: 5px;
+    font: $font-stack;
+    border-radius: 2px;
+    cursor: pointer;
+
+    .task:last-of-type{
+        margin: 5px 20px 15px 20px;
+}
+
+}
+.close{
+    float: right;
+    padding: 5px;
+    cursor: pointer;
+}
+.textInput{
+    background-color: $bg-color;
+    border: none;
+    border-bottom: 1px solid $black;
+    height: 15px;
+    margin: 5px;
+    padding: 2px;
+}
+.sendBtn{
+    float: right;
+    box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, $send-btn-bg-color 5%, #ccc2a6 100%);
+	background-color:$send-btn-bg-color;
+	border-radius:5px;
+	border:1px solid $send-btn-border-color;
+	cursor:pointer;
+	color: $send-btn-txt-color;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:3px 8px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px $white;
+}
+.addBoardForm{
+    margin: 30px 10px;
+}
+.addTaskForm{
+    margin: 30px 10px;
+}

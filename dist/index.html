@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap" rel="stylesheet">
+  <title>Kanban</title>
+</head>
+
+<body>
+
+  <div class="header">
+    <div>kanban</div>
+  </div>
+  <div class="kanban">
+  </div>
+
+  <div class="addForm hidden">
+    <div class="close">
+      <span>X</span>
+    </div>
+    <div class="addBoardForm">
+      <p>Add new board</p>
+      <input type="text" placeholder="Board name" id="boardName" class="textInput"><br>
+      <input type="submit" value="Add" id="addBoardBtn" class="sendBtn">
+    </div>
+    <div class="addTaskForm">
+      <p>Add new idea</p>
+      <input type="text" placeholder="New idea" id="taskName" class="textInput"><br>
+      <input type="submit" value="Add" id="addTaskBtn" class="sendBtn">
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
